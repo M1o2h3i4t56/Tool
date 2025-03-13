@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert currencies with real-time exchange rates using our free online Currency Converter Tool. Accurate and easy-to-use for USD, GBP, EUR, and more.">
+    <meta name="keywords" content="currency converter, exchange rates, online currency converter, real-time exchange rates, foreign exchange calculator, money converter, USD to GBP, GBP to USD, EUR to USD, currency conversion tool">
+    <title>Currency Converter - Real-Time Exchange Rates | Free Online Tool</title>
+
+    <link rel="icon" href="icons/CONVERTER.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <div class="logo">Currency Converter</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Currency Converter</a></li>
+                    <li><a href="#">Exchange rates</a></li>
+                    <li><a href="#">Conversion History</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section class="converter">
+                <h1>Currency Converter - Real-Time Exchange Rates</h1>
+                <p>Convert currencies instantly with our free online Currency Converter Tool. Get accurate exchange rates for USD, GBP, EUR, and more. Perfect for travel, business, and personal use.</p>
+                <form id="conversion-form">
+                    <input type="number" id="amount" placeholder="Enter Amount" required/>
+                    <select id="from-currency" required>
+                        <option value="USD">USD - United States Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                    </select>
+                    <span class="arrow">➜</span>
+                    <select id="to-currency" required>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="USD">USD - United States Dollar</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                    </select>
+                    <div class="button-group">
+                        <button type="submit" class="btn-convert">Convert Currency</button>
+                        <button type="button" class="btn-reset" onclick="resetResults()">Reset</button>
+                    </div>
+                </form>
+                <div id="result" class="result-box"></div>
+            </section>
+        
+            <section class="history">
+                <h2>Currency Conversion History</h2>
+                <p>Track your past conversions with our Currency Conversion History feature. Save time and stay organized with accurate records of your exchange rates.</p>
+                <div id="history-list" class="history-list"></div>
+            </section>
+
+            <section class="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>How does the Currency Converter Tool work?</h3>
+                    <p>Our Currency Converter Tool uses real-time exchange rates to convert currencies instantly. Simply enter the amount, select the currencies, and click "Convert Currency."</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is the Currency Converter Tool free to use?</h3>
+                    <p>Yes, our Currency Converter Tool is completely free to use. You can convert currencies anytime without any hidden fees.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I track historical exchange rates?</h3>
+                    <p>Yes, our Conversion History feature allows you to track past currency conversions and view historical exchange rates.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="contact-info">
+                <p>
+                    <a href="https://www.instagram.com/mohit_official110" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i> mohit_official110
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:itsmemohit614@gmail.com">
+                        <i class="fas fa-envelope"></i> itsmemohit614@gmail.com
+                    </a>
+                </p>
+            </div>
+            <p class="last-line-footer">© 2025 Currency Converter Tool. All rights reserved. Convert currencies in real-time with accurate exchange rates.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
